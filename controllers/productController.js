@@ -6,7 +6,7 @@ export const getAllProduct = async (req, res) => {
         res.status(200).json({products})
     } catch (error) {
         console.log("Error in getAllProduct", error);
-        res.status(500).json({ message: "Error fetching products"});
+        res.status(500).json({ message: "Error fetching products",error});
     }
 }
 
